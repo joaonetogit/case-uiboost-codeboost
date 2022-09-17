@@ -13,7 +13,7 @@
 
   .wrapper {
     @include flex(row, center, space-between);
-    padding: 16rem 0;
+    padding: 16rem 0 0;
 
     @include responsive(max-width, 768px) {
       flex-direction: column;
@@ -235,6 +235,118 @@
           line-height: 120%;
           text-align: center;
           color: #ffffff;
+        }
+      }
+    }
+  }
+}
+
+.s-join {
+  width: 100%;
+  max-width: 130.2rem;
+  margin: 0 auto;
+  background: url('../img/bg-porqueparticipar.jpg') no-repeat;
+  background-size: cover;
+
+  .wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 8.6rem;
+    padding: 8rem 0 9.6rem;
+    .text {
+      display: flex;
+      flex-direction: column;
+      gap: 2.4rem;
+      .title {
+        font-family: $font-heading;
+        font-weight: 600;
+        font-size: 3.2rem;
+        line-height: 120%;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: $color-white;
+      }
+      .description {
+        width: 100%;
+        max-width: 86.4rem;
+        margin: 0 auto;
+        font-family: $font-body;
+        font-weight: 400;
+        font-size: 1.8rem;
+        line-height: 150%;
+        text-align: center;
+        color: $color-white;
+      }
+    }
+
+    .features {
+      display: flex;
+      gap: 6rem;
+
+      &-item {
+        display: flex;
+        gap: 2rem;
+
+        &-icon {
+          margin-top: 0.8rem;
+        }
+        &-text {
+          font-family: $font-body;
+          font-weight: 500;
+          font-size: 1.8rem;
+          line-height: 150%;
+          color: $color-white;
+        }
+      }
+    }
+  }
+}
+
+.s-infos {
+  .infos {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10.4rem;
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      gap: 2.4rem;
+      width: 100%;
+      max-width: 48.7rem;
+
+      &-title {
+        font-family: $font-heading;
+        font-weight: 700;
+        font-size: 3.2rem;
+        line-height: 120%;
+        letter-spacing: 0.02em;
+        color: $neutral-200;
+      }
+
+      &-description {
+        font-family: $font-body;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        color: $neutral-400;
+
+        a {
+          color: $secondary;
+        }
+      }
+
+      .details {
+        display: flex;
+        align-items: center;
+        gap: 1.6rem;
+        .text {
+          font-family: $font-body;
+          font-weight: 400;
+          font-size: 1.8rem;
+          line-height: 150%;
+          color: $neutral-400;
         }
       }
     }

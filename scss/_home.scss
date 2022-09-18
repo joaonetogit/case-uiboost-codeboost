@@ -306,7 +306,7 @@
 .s-infos {
   .infos {
     display: flex;
-    justify-content: space-between;
+    gap: 13.7rem;
     margin-top: 10.4rem;
 
     &-item {
@@ -347,6 +347,70 @@
           font-size: 1.8rem;
           line-height: 150%;
           color: $neutral-400;
+        }
+      }
+    }
+  }
+}
+
+.s-prefooter {
+  .wrapper {
+    .row {
+      display: flex;
+      align-items: center;
+      gap: 36.5rem;
+      margin: 8rem 0 5.6rem;
+      padding: 5rem 0;
+      border-top: 1.5px solid rgba($color: $neutral-400, $alpha: 0.1);
+      border-bottom: 1.5px solid rgba($color: $neutral-400, $alpha: 0.1);
+      .text-high {
+        font-family: $font-heading;
+        font-weight: 600;
+        font-size: 2.4rem;
+        line-height: 120%;
+        color: $neutral-200;
+      }
+      .notion {
+        width: 22.3rem;
+        height: 6.4rem;
+        background: $neutral-500;
+        border-radius: 0.4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        span {
+          font-family: $font-body;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 150%;
+          color: $neutral-200;
+        }
+      }
+
+      &-second {
+        display: flex;
+        justify-content: space-between;
+
+        .producer,
+        .support {
+          width: 47%;
+          display: flex;
+          flex-direction: column;
+          gap: 3.5rem;
+          .title {
+            font-family: $font-heading;
+            font-weight: 600;
+            font-size: 2rem;
+            line-height: 120%;
+            color: $neutral-200;
+          }
+
+          .figures {
+            display: flex;
+            align-items: center;
+            gap: 5rem;
+          }
         }
       }
     }
